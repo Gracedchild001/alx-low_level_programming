@@ -2,25 +2,25 @@
 #include "main.h"
 /**
 **_memset - fills mem with const byte
-*@s: mem area to fill
-*@b: copy char
-*@n: copy num
-*Return: memory area pointer
+*@s: filled mem area
+*@b: copied char
+*@n: number of copying
+*Return: pointer to memory area
 */
 char *_memset(char *s, char b, unsigned int n)
 {
 unsigned int i;
 for (i = 0; i < n; i++)
-}
+{
 s[i] = b;
 }
 return (s);
 }
 /**
-**_calloc - mem alloc for arr
-*@nmemb: elements no in arr
-*@size: element sizes
-*Return: alloc mem pointer
+ * *_calloc - alloc mem for arr
+*@nmemb: elements num in arr
+*@size: size of elements
+*Return: allocated memory pointer
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
