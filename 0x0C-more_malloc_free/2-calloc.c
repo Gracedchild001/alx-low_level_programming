@@ -17,7 +17,7 @@ s[i] = b;
 return (s);
 }
 /**
- * *_calloc - mem alloc for arr
+**_calloc - mem alloc for arr
 *@nmemb: elements no in arr
 *@size: element sizes
 *Return: alloc mem pointer
