@@ -1,19 +1,18 @@
 #include "lists.h"
 /**
-*get_nodeint_at_index - returns the node at an index
-*@head: pointer to first_node
-*@index: node_index
-*Return: the spec_index_pointer or NULL otherwise
+*get_nodeint_at_index - funct to returns the nth node of a listint_t
+*@head: first node
+*@index: the index of the node, starting at 0
+*Return: if the node does not exist, return NULL
 */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-unsigned int cur_index = 0;
-listint_t *cur_node = head;
-
-while (cur_node && cur_index < index)
+unsigned int a = 0;
+listint_t *t = head;
+while (t && a < index)
 {
-cur_node = cur_node->next;
-cur_index++;
+t = t->next;
+a++;
 }
-return (cur_node ? cur_nodeode : NULL);
+return (t ? t : NULL);
 }
