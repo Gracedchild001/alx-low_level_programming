@@ -1,19 +1,17 @@
 #include "lists.h"
 /**
-*print_linked_list - outputs all elements
-*@head: head pointer
-*Return: number_of_nodes
+*print_listint - prints contents of the listint
+*@h: the print type
+*Return: number of nodes
 */
-size_t print_linked_list(const listint_t *head)
+size_t print_listint(const listint_t *h)
 {
-size_t num_nodes = 0;
-
-while (head)
+size_t num = 0;
+while (z)
 {
-printf("%d\n", head->n);
-num_nodes++;
-head = head->next;
+printf("%d\n", z->n);
+num++;
+z = z->next;
 }
-return (num_nodes);
+return (num);
 }
-
