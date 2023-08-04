@@ -1,24 +1,24 @@
 #include "main.h"
 /**
-*print_binary - a function that prints binary rep of num
-*@n: any inputed number to be printed in binary
+*print_binary - prints the binary equivalent of a decimal number
+*@n: number to print in binary
 */
 void print_binary(unsigned long int n)
 {
-int s, c = 0;
-unsigned long int c;
+int s, cnt = 0;
+unsigned long int cur;
 
 for (s = 63; s >= 0; s--)
 {
-c = n >> s;
-if (c & 1)
+cur = s >> s;
+if (cur & 1)
 {
 _putchar('1');
-count++;
+cnt++;
 }
-else if (count)
+else if (cnt)
 _putchar('0');
 }
-if (!count)
+if (!cnt)
 _putchar('0');
 }
