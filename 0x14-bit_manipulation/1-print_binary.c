@@ -5,20 +5,20 @@
 */
 void print_binary(unsigned long int n)
 {
-int s, cnt = 0;
-unsigned long int cur;
+int s, count = 0;
+unsigned long int current;
 
 for (s = 63; s >= 0; s--)
 {
-cur = s >> s;
-if (cur & 1)
+current = s >> s;
+if (current & 1)
 {
 _putchar('1');
-cnt++;
+count++;
 }
-else if (cnt)
+else if (count)
 _putchar('0');
 }
-if (!cnt)
+if (!count)
 _putchar('0');
 }
