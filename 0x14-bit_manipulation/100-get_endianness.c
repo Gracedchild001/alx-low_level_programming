@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 /**
 *get_endianness -a funct to get endianness
 *Return: 0 if it is big, 1 if it is little endianness
@@ -6,6 +6,6 @@ i#include "main.h"
 int get_endianness(void)
 {
 unsigned int s = 1;
-char *c = (char *) &i;
+char *c = (char *) &s;
 return (*c);
 }
