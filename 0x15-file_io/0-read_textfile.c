@@ -17,7 +17,7 @@ if (fe == -1)
 return (0);
 cuf = malloc(sizeof(char) * letters);
 e = read(fe, cuf, letters);
-w = write(STDOUT_FILENO, cuf, e);
+r = write(STDOUT_FILENO, cuf, e);
 free(cuf);
 close(fe);
 return (r);
